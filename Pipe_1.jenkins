@@ -2,28 +2,42 @@ pipeline {
     agent any
 
     stages {
-        stage('1-Caina') {
+        stage('Initialization') {
             steps {
                 echo "Start of Stage Build"
                 echo "Building......."
                 echo "End of Stage Build"
             }
         }
-        stage('2-Antenora') {
+        stage('Get version') {
             steps {
                 echo "Start of Stage Test"
                 echo "Testing......."
                 echo "End of Stage Build"
             }
         }
-        stage('3-Ptolomaea') {
+        stage('Build application') {
             steps {
                 echo "Start of Stage Deploy"
                 echo "Deploying......."
                 echo "End of Stage Build"
             }
         }
-        stage('4-END') {
+        stage('Install DB') {
+            steps {
+                echo "Start of Stage Deploy"
+                echo "Deploying......."
+                echo "End of Stage Build"
+            }
+        }
+        stage('Install application') {
+            steps {
+                echo "Start of Stage Deploy"
+                echo "Deploying......."
+                echo "End of Stage Build"
+            }
+        }
+        stage('Install') {
             steps {
                 echo "Start of Stage Deploy"
                 echo "Deploying......."
