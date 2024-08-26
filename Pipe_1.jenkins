@@ -7,7 +7,7 @@ pipeline {
                 echo "Start of Stage Build"
                 echo "Building......."
                 echo "End of Stage Build"
-                sleep 20
+                sleep 5
             }
         }
         stage('Get version') {
@@ -15,6 +15,7 @@ pipeline {
                 echo "Start of Stage Test"
                 echo "Testing......."
                 echo "End of Stage Build"
+                sleep 5
             }
         }
         stage('Build application') {
@@ -22,6 +23,7 @@ pipeline {
                 echo "Start of Stage Deploy"
                 echo "Deploying......."
                 echo "End of Stage Build"
+                sleep 5
             }
         }
         stage('Install DB') {
@@ -29,6 +31,7 @@ pipeline {
                 echo "Start of Stage Deploy"
                 echo "Deploying......."
                 echo "End of Stage Build"
+                sleep 5
             }
         }
         stage('Install application') {
@@ -36,6 +39,7 @@ pipeline {
                 echo "Start of Stage Deploy"
                 echo "Deploying......."
                 echo "End of Stage Build"
+                sleep 5
             }
         }
         stage('Install') {
@@ -43,6 +47,7 @@ pipeline {
                 echo "Start of Stage Deploy"
                 echo "Deploying......."
                 echo "End of Stage Build"
+                sleep 5
             }
         }
    }
